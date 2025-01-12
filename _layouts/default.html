@@ -1,31 +1,39 @@
----
-layout: compress
----
-
-{% include base_path %}
-
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+<html>
   <head>
-    {% include head.html %}
-    {% include head/custom.html %}
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>vasco m. carvalho {% if page.title %} | {{ page.title }} {% endif %} </title>
+
+    <link rel="stylesheet" href="{{ site.url }}/css/styles.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
   </head>
-
+  
   <body>
+    <div class="wrapper">
+      <header>
+      	<p>&nbsp</p>
+        <p></p>
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+        	<p class="view"><a href="http://mhatzikonstantinou.github.io/">home</small></a></p>
+		      <p class="view"><a href="http://mhatzikonstantinou.github.io/research.html">research</a></p>
+		      <p class="view"><a href="http://mhatzikonstantinou.github.io/teaching.html">teaching</a></p>
+		      <p class="view"><a href="./pdfs/ChatzikonstantinouCV.pdf">cv</a></p>
+      </header>
+      
+      <section>
+	       {{ content }}
 
-    {{ content }}
-
-    <div class="page__footer">
+      </section>
+      
       <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
+        <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> </small></p>
       </footer>
     </div>
-
-    {% include scripts.html %}
+    <script src="{{ site.url }}/javascripts/scale.fix.js"></script>
 
   </body>
 </html>
