@@ -1,2 +1,2 @@
 # mhatzikonstantinou.github.io
-Manolis C web page
+Manolis Chatzikonstantinou web page
